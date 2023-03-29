@@ -86,4 +86,47 @@ li {
      margin-bottom: 6rem;
      text-transform: capitalize;
    }
+   input, textarea{
+    max-width: 50rem;
+    color: ${({ theme }) => theme.colors.Black};
+    padding: 1.6rem 2.4rem;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    text-transform: uppercase;
+    box-Shadow: ${({ theme }) => theme.colors.shadowSupport};
+   }
+   input[type="submit"]{
+    max-width: 16rem;
+    margin-top: 2rem;
+    background-color: ${({ theme }) => theme.colors.btn};
+    color: ${({ theme }) => theme.colors.white};
+    padding: 1.4rem 2.2rem;
+    border-style : solid;
+    border-white: .1rem;
+    
+    font-size: 1.8rem;
+    cursor: pointer;
+     }
+    .contact-forms{
+      max-width: 50rem;
+      margin: auto;
+    }
+    .contact-input{
+      padding: 9rem 0 4rem 0;
+      display:flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    input[type="submit"]{
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover{
+        background-color:  ${({ theme }) => theme.colors.white};
+        border: ${({ theme }) => theme.colors.btn};
+        color: ${({ theme }) => theme.colors.btn};
+        tramsform: scaole(0.9);
+      }
+    }
+
+
    `;

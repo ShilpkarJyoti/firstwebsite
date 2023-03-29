@@ -2,19 +2,18 @@ import React, { useContext, useEffect, useReducer } from "react";
 import  reducer  from "./reducer";
 
 const  AppContext = React.createContext();
-const API="C:\Users\jyoti\apps\reactfirstwebsite\backapi\data.json";
-;
 
 const initialState={
     name: "",
     image: "",
-    services: [],
+    services: "",
 };
 
 
 
 
 const AppProvider =({ children}) =>{
+const API  = "https://github.com/ShilpkarJyoti/reactfirstwebsite.git"
 
     const [state,dispatch] = useReducer(reducer, initialState);
 
